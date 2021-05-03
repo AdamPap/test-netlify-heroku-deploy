@@ -7,7 +7,7 @@ export default function PostList() {
     const getPosts = async () => {
         const posts = await axios({
             method: 'GET',
-            url: 'http://localhost:3001/posts'
+            url: 'https://test-netlify-heroku-deploy.herokuapp.com/posts'
         })
         console.log(posts.data)
         setPosts(posts.data)
